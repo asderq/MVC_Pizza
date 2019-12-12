@@ -9,15 +9,15 @@ using TobbbformosPizzaAlkalmazasEgyTabla.Repository;
 
 namespace _2019TobbformosMvcPizzaEgyTabla.repository
 {
-        partial class RepositoryMegrendelo
-        {
+        partial class MRepository
+    {
             List<Megrendelo> megrendelok;
 
             public List<Megrendelo> getMegrendelok()
             {
                 return megrendelok;
             }
-
+            
             public void setMegrendelok(List<Megrendelo> megrendelok)
             {
                 this.megrendelok = megrendelok;

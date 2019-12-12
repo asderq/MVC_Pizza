@@ -47,6 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormMegrendelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormPizzas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +72,7 @@
     <Compile Include="model\PizzaDatabase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="repository\MRepository.cs" />
     <Compile Include="repository\Repository.cs" />
     <Compile Include="repository\RepositoryException.cs" />
     <Compile Include="repository\RepositoryExceptionCantAdd.cs" />

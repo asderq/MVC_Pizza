@@ -70,23 +70,23 @@
             this.dataGridViewPizzak = new System.Windows.Forms.DataGridView();
             this.tabPageFutarok = new System.Windows.Forms.TabPage();
             this.tabPageMegrendelok = new System.Windows.Forms.TabPage();
-            this.errorProviderPizzaName = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProviderPizzaPrice = new System.Windows.Forms.ErrorProvider(this.components);
             this.buttonMegrendeloMegsem = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMódosítTörölGombok = new System.Windows.Forms.Panel();
             this.buttonMegrendeloModosit = new System.Windows.Forms.Button();
             this.buttonMegrendeloTorol = new System.Windows.Forms.Button();
             this.buttonMegrendeloUjMent = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panelMegrendelok = new System.Windows.Forms.Panel();
+            this.textBoxMegrendeloCim = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxMegrendeloNev = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxMegrendeloAzon = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonMegrendeloUj = new System.Windows.Forms.Button();
             this.buttonMegrendeloBetoltes = new System.Windows.Forms.Button();
             this.dataGridViewMegrendelo = new System.Windows.Forms.DataGridView();
+            this.errorProviderPizzaName = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderPizzaPrice = new System.Windows.Forms.ErrorProvider(this.components);
             this.menuStrip1.SuspendLayout();
             this.toolStripStatus.SuspendLayout();
             this.toolStripToolbar.SuspendLayout();
@@ -96,11 +96,11 @@
             this.panelPizza.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPizzak)).BeginInit();
             this.tabPageMegrendelok.SuspendLayout();
+            this.panelMódosítTörölGombok.SuspendLayout();
+            this.panelMegrendelok.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMegrendelo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderPizzaName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderPizzaPrice)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMegrendelo)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -302,7 +302,6 @@
             this.tabPagePizzak.TabIndex = 0;
             this.tabPagePizzak.Text = "Pizzák kezelése";
             this.tabPagePizzak.UseVisualStyleBackColor = true;
-            this.tabPagePizzak.Click += new System.EventHandler(this.tabPagePizzak_Click);
             // 
             // buttonMegsem
             // 
@@ -463,9 +462,9 @@
             // tabPageMegrendelok
             // 
             this.tabPageMegrendelok.Controls.Add(this.buttonMegrendeloMegsem);
-            this.tabPageMegrendelok.Controls.Add(this.panel1);
+            this.tabPageMegrendelok.Controls.Add(this.panelMódosítTörölGombok);
             this.tabPageMegrendelok.Controls.Add(this.buttonMegrendeloUjMent);
-            this.tabPageMegrendelok.Controls.Add(this.panel2);
+            this.tabPageMegrendelok.Controls.Add(this.panelMegrendelok);
             this.tabPageMegrendelok.Controls.Add(this.buttonMegrendeloUj);
             this.tabPageMegrendelok.Controls.Add(this.buttonMegrendeloBetoltes);
             this.tabPageMegrendelok.Controls.Add(this.dataGridViewMegrendelo);
@@ -477,14 +476,6 @@
             this.tabPageMegrendelok.Text = "Megrendelők kezelése";
             this.tabPageMegrendelok.UseVisualStyleBackColor = true;
             // 
-            // errorProviderPizzaName
-            // 
-            this.errorProviderPizzaName.ContainerControl = this;
-            // 
-            // errorProviderPizzaPrice
-            // 
-            this.errorProviderPizzaPrice.ContainerControl = this;
-            // 
             // buttonMegrendeloMegsem
             // 
             this.buttonMegrendeloMegsem.Location = new System.Drawing.Point(909, 454);
@@ -495,15 +486,15 @@
             this.buttonMegrendeloMegsem.UseVisualStyleBackColor = true;
             this.buttonMegrendeloMegsem.Visible = false;
             // 
-            // panel1
+            // panelMódosítTörölGombok
             // 
-            this.panel1.Controls.Add(this.buttonMegrendeloModosit);
-            this.panel1.Controls.Add(this.buttonMegrendeloTorol);
-            this.panel1.Location = new System.Drawing.Point(713, 168);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(271, 62);
-            this.panel1.TabIndex = 14;
-            this.panel1.Visible = false;
+            this.panelMódosítTörölGombok.Controls.Add(this.buttonMegrendeloModosit);
+            this.panelMódosítTörölGombok.Controls.Add(this.buttonMegrendeloTorol);
+            this.panelMódosítTörölGombok.Location = new System.Drawing.Point(713, 168);
+            this.panelMódosítTörölGombok.Name = "panelMódosítTörölGombok";
+            this.panelMódosítTörölGombok.Size = new System.Drawing.Size(271, 62);
+            this.panelMódosítTörölGombok.TabIndex = 14;
+            this.panelMódosítTörölGombok.Visible = false;
             // 
             // buttonMegrendeloModosit
             // 
@@ -533,26 +524,26 @@
             this.buttonMegrendeloUjMent.UseVisualStyleBackColor = true;
             this.buttonMegrendeloUjMent.Visible = false;
             // 
-            // panel2
+            // panelMegrendelok
             // 
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(713, 246);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(271, 160);
-            this.panel2.TabIndex = 12;
-            this.panel2.Visible = false;
+            this.panelMegrendelok.Controls.Add(this.textBoxMegrendeloCim);
+            this.panelMegrendelok.Controls.Add(this.label1);
+            this.panelMegrendelok.Controls.Add(this.textBoxMegrendeloNev);
+            this.panelMegrendelok.Controls.Add(this.label2);
+            this.panelMegrendelok.Controls.Add(this.textBoxMegrendeloAzon);
+            this.panelMegrendelok.Controls.Add(this.label3);
+            this.panelMegrendelok.Location = new System.Drawing.Point(713, 246);
+            this.panelMegrendelok.Name = "panelMegrendelok";
+            this.panelMegrendelok.Size = new System.Drawing.Size(271, 160);
+            this.panelMegrendelok.TabIndex = 12;
+            this.panelMegrendelok.Visible = false;
             // 
-            // textBox1
+            // textBoxMegrendeloCim
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 20);
-            this.textBox1.TabIndex = 5;
+            this.textBoxMegrendeloCim.Location = new System.Drawing.Point(132, 96);
+            this.textBoxMegrendeloCim.Name = "textBoxMegrendeloCim";
+            this.textBoxMegrendeloCim.Size = new System.Drawing.Size(136, 20);
+            this.textBoxMegrendeloCim.TabIndex = 5;
             // 
             // label1
             // 
@@ -563,12 +554,12 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Megrendelő cím";
             // 
-            // textBox2
+            // textBoxMegrendeloNev
             // 
-            this.textBox2.Location = new System.Drawing.Point(132, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 20);
-            this.textBox2.TabIndex = 3;
+            this.textBoxMegrendeloNev.Location = new System.Drawing.Point(132, 58);
+            this.textBoxMegrendeloNev.Name = "textBoxMegrendeloNev";
+            this.textBoxMegrendeloNev.Size = new System.Drawing.Size(136, 20);
+            this.textBoxMegrendeloNev.TabIndex = 3;
             // 
             // label2
             // 
@@ -579,13 +570,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Megrendelő név";
             // 
-            // textBox3
+            // textBoxMegrendeloAzon
             // 
-            this.textBox3.Location = new System.Drawing.Point(132, 19);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(136, 20);
-            this.textBox3.TabIndex = 1;
+            this.textBoxMegrendeloAzon.Location = new System.Drawing.Point(132, 19);
+            this.textBoxMegrendeloAzon.Name = "textBoxMegrendeloAzon";
+            this.textBoxMegrendeloAzon.ReadOnly = true;
+            this.textBoxMegrendeloAzon.Size = new System.Drawing.Size(136, 20);
+            this.textBoxMegrendeloAzon.TabIndex = 1;
             // 
             // label3
             // 
@@ -614,6 +605,7 @@
             this.buttonMegrendeloBetoltes.TabIndex = 10;
             this.buttonMegrendeloBetoltes.Text = "Betöltés";
             this.buttonMegrendeloBetoltes.UseVisualStyleBackColor = true;
+            this.buttonMegrendeloBetoltes.Click += new System.EventHandler(this.buttonMegrendeloBetoltes_Click);
             // 
             // dataGridViewMegrendelo
             // 
@@ -622,6 +614,14 @@
             this.dataGridViewMegrendelo.Name = "dataGridViewMegrendelo";
             this.dataGridViewMegrendelo.Size = new System.Drawing.Size(652, 623);
             this.dataGridViewMegrendelo.TabIndex = 9;
+            // 
+            // errorProviderPizzaName
+            // 
+            this.errorProviderPizzaName.ContainerControl = this;
+            // 
+            // errorProviderPizzaPrice
+            // 
+            this.errorProviderPizzaPrice.ContainerControl = this;
             // 
             // FormPizzaFutarKft
             // 
@@ -648,12 +648,12 @@
             this.panelPizza.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPizzak)).EndInit();
             this.tabPageMegrendelok.ResumeLayout(false);
+            this.panelMódosítTörölGombok.ResumeLayout(false);
+            this.panelMegrendelok.ResumeLayout(false);
+            this.panelMegrendelok.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMegrendelo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderPizzaName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderPizzaPrice)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMegrendelo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -704,16 +704,16 @@
         private System.Windows.Forms.Button buttonUjMentes;
         private System.Windows.Forms.Button buttonMegsem;
         private System.Windows.Forms.Button buttonMegrendeloMegsem;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelMódosítTörölGombok;
         private System.Windows.Forms.Button buttonMegrendeloModosit;
         private System.Windows.Forms.Button buttonMegrendeloTorol;
         private System.Windows.Forms.Button buttonMegrendeloUjMent;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panelMegrendelok;
+        private System.Windows.Forms.TextBox textBoxMegrendeloCim;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxMegrendeloNev;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxMegrendeloAzon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonMegrendeloUj;
         private System.Windows.Forms.Button buttonMegrendeloBetoltes;
