@@ -284,11 +284,28 @@ namespace _2019TobbformosMvcPizzaEgyTabla
             int ujPizzaAzonosito = repo.getNextPizzaId();
             textBoxPizzaAzonosito.Text = ujPizzaAzonosito.ToString();
 
+        }
 
+        private void buttonMegrendeloMegsem_Click(object sender, EventArgs e)
+        {
+            beallitGombokatUjMegrendelesMegsemEsMentes();
+        }
 
+        private void beallitGombokatUjMegrendelesMegsemEsMentes()
+        {
+            if ((dataGridViewMegrendelo.Rows != null) &&
+                (dataGridViewMegrendelo.Rows.Count > 0))
+                dataGridViewMegrendelo.Rows[0].Selected = true;
+            buttonMegrendeloUjMent.Visible = false;
+            buttonMegrendeloMegsem.Visible = false;
+            panelMódosítTörölGombok.Visible = true;
+            ujAdatMegadas = false;
 
+            textBoxMegrendeloNev.Text = string.Empty;
+            textBoxMegrendeloCim.Text = string.Empty;
 
         }
+
 
 
 

@@ -161,7 +161,7 @@
             // többtöbbKapcsolatToolStripMenuItem
             // 
             this.többtöbbKapcsolatToolStripMenuItem.Name = "többtöbbKapcsolatToolStripMenuItem";
-            this.többtöbbKapcsolatToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
+            this.többtöbbKapcsolatToolStripMenuItem.Size = new System.Drawing.Size(129, 20);
             this.többtöbbKapcsolatToolStripMenuItem.Text = "Több-több kapcsolat";
             // 
             // tesztadatokToolStripMenuItem
@@ -169,7 +169,7 @@
             this.tesztadatokToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adatbázisToolStripMenuItem});
             this.tesztadatokToolStripMenuItem.Name = "tesztadatokToolStripMenuItem";
-            this.tesztadatokToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.tesztadatokToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.tesztadatokToolStripMenuItem.Text = "Tesztadatok";
             // 
             // adatbázisToolStripMenuItem
@@ -489,6 +489,7 @@
             this.buttonMegrendeloMegsem.Text = "Mégsem";
             this.buttonMegrendeloMegsem.UseVisualStyleBackColor = true;
             this.buttonMegrendeloMegsem.Visible = false;
+            this.buttonMegrendeloMegsem.Click += new System.EventHandler(this.buttonMegrendeloMegsem_Click);
             // 
             // panelMódosítTörölGombok
             // 
