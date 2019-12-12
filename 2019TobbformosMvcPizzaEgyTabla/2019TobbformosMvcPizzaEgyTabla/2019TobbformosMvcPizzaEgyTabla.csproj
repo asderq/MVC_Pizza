@@ -62,6 +62,8 @@
     <Compile Include="FormPizzaFutarKft.Designer.cs">
       <DependentUpon>FormPizzaFutarKft.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModelMegrendeloNotValidLocationExeption.cs" />
+    <Compile Include="ModelMegrendeloNotValidNameExeption.cs" />
     <Compile Include="model\Megrendelo.cs" />
     <Compile Include="model\MegrendeloDatabase.cs" />
     <Compile Include="model\ModelExeption.cs" />

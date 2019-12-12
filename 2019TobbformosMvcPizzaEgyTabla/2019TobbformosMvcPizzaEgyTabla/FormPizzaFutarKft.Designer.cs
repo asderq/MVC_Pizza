@@ -87,6 +87,8 @@
             this.dataGridViewMegrendelo = new System.Windows.Forms.DataGridView();
             this.errorProviderPizzaName = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProviderPizzaPrice = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderMegrendeloNev = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderMegrendeloCim = new System.Windows.Forms.ErrorProvider(this.components);
             this.menuStrip1.SuspendLayout();
             this.toolStripStatus.SuspendLayout();
             this.toolStripToolbar.SuspendLayout();
@@ -101,6 +103,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMegrendelo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderPizzaName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderPizzaPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderMegrendeloNev)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderMegrendeloCim)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -504,6 +508,7 @@
             this.buttonMegrendeloModosit.TabIndex = 3;
             this.buttonMegrendeloModosit.Text = "Módosít";
             this.buttonMegrendeloModosit.UseVisualStyleBackColor = true;
+            this.buttonMegrendeloModosit.Click += new System.EventHandler(this.buttonMegrendeloModosit_Click);
             // 
             // buttonMegrendeloTorol
             // 
@@ -513,6 +518,7 @@
             this.buttonMegrendeloTorol.TabIndex = 4;
             this.buttonMegrendeloTorol.Text = "Töröl";
             this.buttonMegrendeloTorol.UseVisualStyleBackColor = true;
+            this.buttonMegrendeloTorol.Click += new System.EventHandler(this.buttonMegrendeloTorol_Click);
             // 
             // buttonMegrendeloUjMent
             // 
@@ -523,6 +529,7 @@
             this.buttonMegrendeloUjMent.Text = "Új mentése";
             this.buttonMegrendeloUjMent.UseVisualStyleBackColor = true;
             this.buttonMegrendeloUjMent.Visible = false;
+            this.buttonMegrendeloUjMent.Click += new System.EventHandler(this.buttonMegrendeloUjMent_Click);
             // 
             // panelMegrendelok
             // 
@@ -596,6 +603,7 @@
             this.buttonMegrendeloUj.Text = "Új";
             this.buttonMegrendeloUj.UseVisualStyleBackColor = true;
             this.buttonMegrendeloUj.Visible = false;
+            this.buttonMegrendeloUj.Click += new System.EventHandler(this.buttonMegrendeloUj_Click);
             // 
             // buttonMegrendeloBetoltes
             // 
@@ -622,6 +630,14 @@
             // errorProviderPizzaPrice
             // 
             this.errorProviderPizzaPrice.ContainerControl = this;
+            // 
+            // errorProviderMegrendeloNev
+            // 
+            this.errorProviderMegrendeloNev.ContainerControl = this;
+            // 
+            // errorProviderMegrendeloCim
+            // 
+            this.errorProviderMegrendeloCim.ContainerControl = this;
             // 
             // FormPizzaFutarKft
             // 
@@ -654,6 +670,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMegrendelo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderPizzaName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderPizzaPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderMegrendeloNev)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderMegrendeloCim)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -718,6 +736,8 @@
         private System.Windows.Forms.Button buttonMegrendeloUj;
         private System.Windows.Forms.Button buttonMegrendeloBetoltes;
         private System.Windows.Forms.DataGridView dataGridViewMegrendelo;
+        private System.Windows.Forms.ErrorProvider errorProviderMegrendeloNev;
+        private System.Windows.Forms.ErrorProvider errorProviderMegrendeloCim;
     }
 }
 
