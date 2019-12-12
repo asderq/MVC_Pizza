@@ -568,6 +568,7 @@
             this.textBoxMegrendeloNev.Name = "textBoxMegrendeloNev";
             this.textBoxMegrendeloNev.Size = new System.Drawing.Size(136, 20);
             this.textBoxMegrendeloNev.TabIndex = 3;
+            this.textBoxMegrendeloNev.TextChanged += new System.EventHandler(this.textBoxMegrendeloNev_TextChanged);
             // 
             // label2
             // 
@@ -585,6 +586,7 @@
             this.textBoxMegrendeloAzon.ReadOnly = true;
             this.textBoxMegrendeloAzon.Size = new System.Drawing.Size(136, 20);
             this.textBoxMegrendeloAzon.TabIndex = 1;
+            this.textBoxMegrendeloAzon.TextChanged += new System.EventHandler(this.textBoxMegrendeloAzon_TextChanged);
             // 
             // label3
             // 

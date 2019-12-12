@@ -36,10 +36,10 @@ namespace _2019TobbformosMvcPizzaEgyTabla
             //A repo-ba lévő pizza listát feltölti az adatbázisból
             mrepo.setMegrendelok(rmp.getMegrendeloFromDatabase());
             RefreshDataToDataGridview();
-            beallitPizzaDataGriViewt();
+            setMegrendeloDataGriView();
             setButtonsForStart();
 
-            dataGridViewMegrendelo.SelectionChanged += dataGridViewMegrendelo_SelectionChanged;
+            dataGridViewMegrendelo.SelectionChanged += DataGridViewMegrendelo_SelectionChanged;
 
 
         }
@@ -306,11 +306,50 @@ namespace _2019TobbformosMvcPizzaEgyTabla
 
         }
 
+        private void beallitGombokatTextboxokatUjMegrendelonel()
+        {
+            panelMegrendelok.Visible = true;
+            panelMódosítTörölGombok.Visible = false;
+            textBoxMegrendeloNev.Text = string.Empty;
+            textBoxMegrendeloCim.Text = string.Empty;
+        }
 
+        private void setButtonAtClick()
+        {
+            ujAdatMegadas = false;
+            buttonMegrendeloUjMent.Visible = false;
+            buttonMegrendeloMegsem.Visible = false;
+            panelMódosítTörölGombok.Visible = true;
+            errorProviderMegrendeloCim.Clear();
+            errorProviderMegrendeloCim.Clear();
+        }
 
+        private void textBoxMegrendeloAzon_TextChanged(object sender, EventArgs e)
+        {
+            kezelUjMegsemGombokatMegrendelo();
+        }
 
+        private void textBoxMegrendeloNev_TextChanged(object sender, EventArgs e)
+        {
+            kezelUjMegsemGombokatMegrendelo();
+        }
 
-
+        private void kezelUjMegsemGombokatMegrendelo()
+        {
+            if (ujAdatMegadas == false)
+                return;
+            if ((textBoxMegrendeloNev.Text != string.Empty) ||
+                (textBoxMegrendeloCim.Text != string.Empty))
+            {
+                buttonMegrendeloUjMent.Visible = true;
+                buttonMegrendeloMegsem.Visible = true;
+            }
+            else
+            {
+                buttonMegrendeloUjMent.Visible = false;
+                buttonMegrendeloMegsem.Visible = false;
+            }
+        }
 
 
     }
