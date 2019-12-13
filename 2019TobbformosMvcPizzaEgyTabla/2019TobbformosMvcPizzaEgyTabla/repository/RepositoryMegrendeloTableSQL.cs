@@ -31,12 +31,10 @@ namespace _2019TobbformosMvcPizzaEgyTabla.repository
                     goodResult = int.TryParse(dr["mazon"].ToString(), out id);
                     if (goodResult)
                     {
-                        string location = dr["mcim"].ToString();                       
-                        if (goodResult)
-                        {
+                        string location = dr["mcim"].ToString();                                           
                             Megrendelo m = new Megrendelo(id,name,location);
                             megrendelok.Add(m);
-                        }
+                        
                     }
                 }
                 connection.Close();

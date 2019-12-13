@@ -18,24 +18,24 @@ namespace _2019TobbformosMvcPizzaEgyTabla.model
         public Megrendelo(int id, string name, string location)
         {
             this.id = id;
+            this.name = name;
             if (!isValidName(name))
                 throw new ModelMegrendeloNotValidNameException("A Megrendelő neve nem megfelelő!");
             if (!isValidLocation(location))
-                throw new ModelMegrendeloNotValidLocationException("A Megrendelő címe nem megfelelő!");
-            this.name = name;
+                throw new ModelMegrendeloNotValidLocationException("A Megrendelő címe nem megfelelő!");          
             this.location = location;
              
            
         }
 
-        private bool isValidName(string nama)
+        private bool isValidName(string name)
         {
             if (name == string.Empty)
                 return false;
             if (!char.IsUpper(name.ElementAt(0)))
                 return false;
             for (int i = 1; i < name.Length; i = i + 1)
-                if (!char.IsLetter(name[i]))
+                if (!char.IsLetter(name.ElementAt(1)))
                     return false;
             return true;
         }
@@ -47,9 +47,9 @@ namespace _2019TobbformosMvcPizzaEgyTabla.model
                 return false;
             if (!char.IsUpper(location.ElementAt(0)))
                 return false;
-            for (int i = 1; i < location.Length; i = i + 1)
+            /*for (int i = 1; i < location.Length; i = i + 1)
                 if (!char.IsLetter(location[i]))
-                    return false;
+                    return false;*/
             return true;
         }
 
