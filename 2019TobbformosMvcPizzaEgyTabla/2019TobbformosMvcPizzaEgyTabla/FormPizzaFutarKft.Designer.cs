@@ -161,7 +161,7 @@
             // többtöbbKapcsolatToolStripMenuItem
             // 
             this.többtöbbKapcsolatToolStripMenuItem.Name = "többtöbbKapcsolatToolStripMenuItem";
-            this.többtöbbKapcsolatToolStripMenuItem.Size = new System.Drawing.Size(129, 20);
+            this.többtöbbKapcsolatToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
             this.többtöbbKapcsolatToolStripMenuItem.Text = "Több-több kapcsolat";
             // 
             // tesztadatokToolStripMenuItem
@@ -169,7 +169,7 @@
             this.tesztadatokToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adatbázisToolStripMenuItem});
             this.tesztadatokToolStripMenuItem.Name = "tesztadatokToolStripMenuItem";
-            this.tesztadatokToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.tesztadatokToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.tesztadatokToolStripMenuItem.Text = "Tesztadatok";
             // 
             // adatbázisToolStripMenuItem
@@ -540,9 +540,9 @@
             this.panelMegrendelok.Controls.Add(this.label2);
             this.panelMegrendelok.Controls.Add(this.textBoxMegrendeloAzon);
             this.panelMegrendelok.Controls.Add(this.label3);
-            this.panelMegrendelok.Location = new System.Drawing.Point(713, 246);
+            this.panelMegrendelok.Location = new System.Drawing.Point(690, 246);
             this.panelMegrendelok.Name = "panelMegrendelok";
-            this.panelMegrendelok.Size = new System.Drawing.Size(271, 160);
+            this.panelMegrendelok.Size = new System.Drawing.Size(294, 160);
             this.panelMegrendelok.TabIndex = 12;
             this.panelMegrendelok.Visible = false;
             // 

@@ -26,7 +26,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla.model
                 return
                     "UPDATE `megrendelo` SET `mnev` = '" +
                     getName() +
-                    "', `par` = '" +
+                    "', `mcim` = '" +
                     getLocation() +
                     "' WHERE `mazon`.`mnev` = " +
                     id;

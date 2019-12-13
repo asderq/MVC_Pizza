@@ -62,7 +62,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla
             {
                 beallitGombokatKattintaskor();
             }
-            if (dataGridViewPizzak.SelectedRows.Count == 1)
+            if (dataGridViewMegrendelo.SelectedRows.Count == 1)
             {
                 panelMegrendelok.Visible = true;
                 panelMódosítTörölGombok.Visible = true;
@@ -280,9 +280,9 @@ namespace _2019TobbformosMvcPizzaEgyTabla
         {
 
             ujAdatMegadas = true;
-            beallitGombokatTextboxokatUjPizzanal();
-            int ujPizzaAzonosito = repo.getNextPizzaId();
-            textBoxPizzaAzonosito.Text = ujPizzaAzonosito.ToString();
+            beallitGombokatTextboxokatUjMegrendelonel();
+            int ujMegrendeloAzonosito = mrepo.getNextMegrendeloId();
+            textBoxMegrendeloAzon.Text = ujMegrendeloAzonosito.ToString();
 
         }
 

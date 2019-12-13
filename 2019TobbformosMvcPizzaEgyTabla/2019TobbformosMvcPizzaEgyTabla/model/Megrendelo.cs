@@ -13,14 +13,13 @@ namespace _2019TobbformosMvcPizzaEgyTabla.model
         private string name;
         private string location;
 
-        public Megrendelo(int id, string name, string location)
+        public Megrendelo(int id, string name)
         {
             this.id = id;
             this.name = name;
-            this.location = location;
         }
 
-        public Megrendelo(int id, string name)
+        public Megrendelo(int id, string name, string location)
         {
             this.id = id;
             if (!isValidName(name))
@@ -28,6 +27,8 @@ namespace _2019TobbformosMvcPizzaEgyTabla.model
             if (!isValidLocation(location))
                 throw new ModelMegrendeloNotValidLocationException("A Megrendelő címe nem megfelelő!");
             this.name = name;
+            this.location = location;
+             
            
         }
 
@@ -38,12 +39,8 @@ namespace _2019TobbformosMvcPizzaEgyTabla.model
             if (!char.IsUpper(name.ElementAt(0)))
                 return false;
             for (int i = 1; i < name.Length; i = i + 1)
-                if (
-                    !char.IsLetter(name.ElementAt(i))
-                        &&
-                    (!char.IsWhiteSpace(name.ElementAt(i)))
-
-                    )
+                if (!char.IsLetter(name.ElementAt(i)
+                    ))
                     return false;
             return true;
         }
@@ -51,11 +48,9 @@ namespace _2019TobbformosMvcPizzaEgyTabla.model
 
         private bool isValidLocation(string location)
         {
-            int eredmeny = 0;
-            if (int.TryParse(location, out eredmeny))
-                return true;
-            else
+            if (name == string.Empty)
                 return false;
+            return true;
         }
 
         public void setID(int id)
