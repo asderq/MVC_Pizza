@@ -200,11 +200,11 @@ namespace _2019TobbformosMvcPizzaEgyTabla
                 //3. módosítani a DataGridView-ban           
                 RefreshDataToDataGridview();
             }
-            catch (ModelMegrendeloNotValidNameExeption mvn)
+            catch (ModelMegrendeloNotValidNameException mvn)
             {
                 errorProviderMegrendeloNev.SetError(textBoxMegrendeloNev, mvn.Message);
             }
-            catch (ModelMegrendeloNotValidLocationExeption nlp)
+            catch (ModelMegrendeloNotValidLocationException nlp)
             {
                 errorProviderMegrendeloCim.SetError(textBoxMegrendeloCim, nlp.Message);
             }
@@ -257,11 +257,11 @@ namespace _2019TobbformosMvcPizzaEgyTabla
                 //3. módosítani a DataGridView-ban           
                 RefreshDataToDataGridview();
             }
-            catch (ModelMegrendeloNotValidNameExeption mvn)
+            catch (ModelMegrendeloNotValidNameException mvn)
             {
                 errorProviderMegrendeloNev.SetError(textBoxMegrendeloNev, mvn.Message);
             }
-            catch (ModelMegrendeloNotValidLocationExeption nlp)
+            catch (ModelMegrendeloNotValidLocationException nlp)
             {
                 errorProviderMegrendeloCim.SetError(textBoxMegrendeloCim, nlp.Message);
             }

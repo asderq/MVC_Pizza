@@ -42,8 +42,8 @@ namespace _2019TobbformosMvcPizzaEgyTabla.repository
             string queryCreateTable =
                 "CREATE TABLE `megrendelo` ( " +
                 "   `mazon` int(3) NOT NULL DEFAULT '0', " +
-                "   `mnev` varchar(15) COLLATE latin2_hungarian_ci NOT NULL DEFAULT '', " +
-                "   `mcim` varchar(30) NOT NULL DEFAULT '0' " +
+                "   `mnev` varchar(40) COLLATE utf8_hungarian_ci NOT NULL DEFAULT '', " +
+                "   `mcim` varchar(30) NOT NULL DEFAULT '', " +
             ")ENGINE = InnoDB; ";
             string queryPrimaryKey =
                 "ALTER TABLE `megrendelo`  ADD PRIMARY KEY(`mazon`); ";

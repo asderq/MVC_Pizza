@@ -46,7 +46,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla.repository
                 string query =
                     "INSERT INTO `megrendelo` (`mazon`, `mnev`, `mcim`) VALUES " +
                             " (1, 'Lázár Martin', 'Kis utca 96'), " +
-                            " (2, 'Székely Szabó Csanád', 'Nagy utca 11'), " +
+                            " (2, 'Székely Csanád', 'Nagy utca 11'), " +
                             " (3, 'Lakatos Brendon', 'Bajnok utca 74'), " +
                             " (4, 'Hibá Zoltán', 'Andrássy utca 23'), " +
                             " (5, 'Valami János', 'Csillag utca 44'); ";

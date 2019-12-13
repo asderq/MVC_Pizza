@@ -34,7 +34,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla.repository
                         string location = dr["mcim"].ToString();                       
                         if (goodResult)
                         {
-                            Megrendelo m = new Megrendelo(id, name, location);
+                            Megrendelo m = new Megrendelo(id,name,location);
                             megrendelok.Add(m);
                         }
                     }
