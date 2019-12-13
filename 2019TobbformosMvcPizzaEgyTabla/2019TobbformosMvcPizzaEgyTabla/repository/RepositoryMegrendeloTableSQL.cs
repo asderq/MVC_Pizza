@@ -31,7 +31,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla.repository
                     goodResult = int.TryParse(dr["mazon"].ToString(), out id);
                     if (goodResult)
                     {
-                        string location = dr["pcim"].ToString();                       
+                        string location = dr["mcim"].ToString();                       
                         if (goodResult)
                         {
                             Megrendelo m = new Megrendelo(id, name, location);
@@ -90,7 +90,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla.repository
             }
         }
 
-        public void insertPizzaToDatabase(Megrendelo ujMegrendelo)
+        public void insertMegrendeloToDatabase(Megrendelo ujMegrendelo)
         {
             MySqlConnection connection = new MySqlConnection(connectionString);
             try

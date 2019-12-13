@@ -36,7 +36,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla.repository
         /// <summary>
         /// csarp adatbázisban megrendelo tábla létrehozása
         /// </summary>
-        public void createTablePizza()
+        public void createTableMegrendelo()
         {
             string queryUSE = "USE csarp;";
             string queryCreateTable =
@@ -72,7 +72,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla.repository
         /// <summary>
         /// pizza tábla törlése csarp adatbázisból
         /// </summary>
-        public void deleteTablePizza()
+        public void deleteTableMegrendelo()
         {
             string query =
                 "USE csarp; " +

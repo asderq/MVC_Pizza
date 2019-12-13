@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _2019TobbformosMvcPizzaEgyTabla.repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla
     {
         RepositoryDatabase rd = new RepositoryDatabase();
         RepositoryDatabaseTablePizza rtp = new RepositoryDatabaseTablePizza();
+        RepositoryMegrendeloTable rmt = new RepositoryMegrendeloTable();
 
         private void torolHibauzenetet()
         {
@@ -34,6 +36,8 @@ namespace _2019TobbformosMvcPizzaEgyTabla
             {
                 torolHibauzenetet();
                 rd.createDatabase();
+               
+
             }
             catch (Exception ex)
             {
@@ -47,6 +51,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla
             {
                 torolHibauzenetet();
                 rd.deleteDatabase();
+                rmt.deleteTableMegrendelo();
             }
             catch (Exception ex)
             {
@@ -60,7 +65,9 @@ namespace _2019TobbformosMvcPizzaEgyTabla
             {
                 torolHibauzenetet();
                 rtp.createTablePizza();
+                rmt.createTableMegrendelo();
                 rtp.fillPizzasWithTestDataFromSQLCommand();
+                rmt.fillMegrendeloWithTestDataFromSQLCommand();
             }
             catch (Exception ex)
             {
@@ -74,6 +81,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla
             {
                 torolHibauzenetet();
                 rtp.deleteTablePizza();
+                rmt.deleteTableMegrendelo();
             }
             catch (Exception ex)
             {

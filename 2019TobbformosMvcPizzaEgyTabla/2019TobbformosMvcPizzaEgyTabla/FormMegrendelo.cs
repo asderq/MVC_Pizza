@@ -248,7 +248,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla
                 RepositoryMegrendeloTable rmt = new RepositoryMegrendeloTable();
                 try
                 {
-                    rmt.insertPizzaToDatabase(ujMegrendelo);
+                    rmt.insertMegrendeloToDatabase(ujMegrendelo);
                 }
                 catch (Exception ex)
                 {
