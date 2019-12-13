@@ -540,7 +540,7 @@
             this.panelMegrendelok.Controls.Add(this.label2);
             this.panelMegrendelok.Controls.Add(this.textBoxMegrendeloAzon);
             this.panelMegrendelok.Controls.Add(this.label3);
-            this.panelMegrendelok.Location = new System.Drawing.Point(690, 246);
+            this.panelMegrendelok.Location = new System.Drawing.Point(690, 236);
             this.panelMegrendelok.Name = "panelMegrendelok";
             this.panelMegrendelok.Size = new System.Drawing.Size(294, 160);
             this.panelMegrendelok.TabIndex = 12;

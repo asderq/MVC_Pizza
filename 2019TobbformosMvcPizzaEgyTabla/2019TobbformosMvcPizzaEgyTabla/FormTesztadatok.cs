@@ -28,6 +28,7 @@ namespace _2019TobbformosMvcPizzaEgyTabla
         {
             toolStripLabelHibauzenet.ForeColor = Color.Red;
             toolStripLabelHibauzenet.Text = hibauzenet;
+
         }
 
         private void adatázbázisLétrehozásToolStripMenuItem_Click(object sender, EventArgs e)
